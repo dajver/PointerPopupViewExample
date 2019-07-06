@@ -5,14 +5,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
     <Button
             android:text="Call popup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/openPopup" android:layout_marginLeft="45dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/openPopup"
+            android:layout_marginLeft="45dp"
             android:layout_marginTop="250dp"/>
     <Button
             android:text="Change button position"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/changeButtonPosition"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/changeButtonPosition"/>
 </RelativeLayout>

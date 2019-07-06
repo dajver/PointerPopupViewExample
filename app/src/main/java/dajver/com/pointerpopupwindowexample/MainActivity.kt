@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
             val adapter = PointerPopupAdapter(this, usersModels)
             val listView = ListView(this)
-            listView.divider = ColorDrawable(resources.getColor(R.color.gray_darkest))
+            listView.divider = ColorDrawable(resources.getColor(R.color.gray_dark))
             listView.dividerHeight = 1
             listView.adapter = adapter
             popupWindow.contentView = listView
