@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         changeButtonPosition.setOnClickListener {
             val params = openPopup.layoutParams as RelativeLayout.LayoutParams
-            params.setMargins((1..1099).random(), (1..499).random(), 10, 0) //substitute parameters for left, top, right, bottom
+            params.setMargins((1..1099).random(), (1..499).random(), 10, 0)
             openPopup.layoutParams = params
         }
     }
