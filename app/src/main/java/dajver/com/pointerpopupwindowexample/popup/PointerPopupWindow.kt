@@ -76,7 +76,6 @@ class PointerPopupWindow private constructor(context: Context, width: Int, heigh
         anchor.getLocationInWindow(loc)
 
         if (mAlignMode == AlignMode.AUTO_OFFSET) {
-            // compute center offset rate
             val offCenterRate = (displayFrame.centerX() - loc[0]) / displayFrameWidth.toFloat()
             xOffset = ((anchor.width - width) / 2 + offCenterRate * width / 2).toInt()
         } else if (mAlignMode == AlignMode.CENTER_FIX) {
@@ -85,7 +84,7 @@ class PointerPopupWindow private constructor(context: Context, width: Int, heigh
 
         val left = loc[0] + xOffset
         val right = left + width
-        // reset x offset to display the window fully in the screen
+
         if (right > displayFrameWidth) {
             xOffset = displayFrameWidth - width - loc[0]
         }
